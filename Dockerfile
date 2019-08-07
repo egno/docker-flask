@@ -2,7 +2,7 @@ FROM python:3.7-alpine
 
 LABEL maintainer="Alexander Shelemetyev"
 
-RUN pip install --no-cache-dir flask flask-cors gunicorn
+RUN pip install --no-cache-dir flask flask-cors gunicorn python-dotenv
 
 COPY . /app
 WORKDIR /app
